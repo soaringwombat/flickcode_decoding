@@ -1,0 +1,31 @@
+<!--日本語でフリック入力した動作を他のキーボードで入力する暗号を解く-->
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+</head>
+<body>
+    <h1>change</h1>
+    <p>
+        変換したいデータ
+        <label><input type="radio" name="type" value="kana" checked>かな</label>
+        <label><input type="radio" name="type" value="english">英語</label>
+        <label><input type="radio" name="type" value="symbol">記号</label>
+    </p>
+    <input type="text" name="code" size="50" maxlength="50">
+    
+    <button onclick="convert()">変換</button><br><br>
+    
+    <!-- 出力欄を作成する -->
+    <label for="kana">かな：</label>
+    <input type="text" name="kana" id="kana" size="50" maxlength="50"><br>
+    
+    <label for="english">英語：</label>
+    <input type="text" name="english" id="english" size="50" maxlength="50"><br>
+    
+    <label for="symbol">記号：</label>
+    <input type="text" name="symbol" id="symbol" size="50" maxlength="50"><br>
+    <script src="change.js"></script>
+</body>
+</html>
